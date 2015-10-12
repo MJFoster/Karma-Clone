@@ -1,6 +1,22 @@
+/* Main elements */
+
 body {
     background-color: LightGray;
 }
+
 div {
     border: 1px solid Chocolate;
+}
+
+/************************************
+ Navigation bar
+************************************/
+.top-navigation {
+	background-color: #fff;
+}
+
+.top-navigation, content{
+	width: 100%;
+	height: 4.37rem;
+	margin: 0 auto;
 }
