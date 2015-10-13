@@ -1,4 +1,10 @@
-/* Main elements */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
     background-color: LightGray;
@@ -15,8 +21,37 @@ div {
 	background-color: #fff;
 }
 
-.top-navigation, content{
-	width: 100%;
+.top-navigation > .content{
+	width: 60%;
 	height: 4.37rem;
 	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.logo {
+	 width: 26px;
+	 height: 70px;
+}
+
+.links {
+	float: right;
+	margin-top: 1.7rem;
+}
+
+.links  li {
+	display: inline-block;
+	margin-left: 1.563rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	color: #838994;
+}
+
+.top-navigation .links .active {
+	color: #4c5058;
+	font-weight: 500;
+}
+
+li > a:hover {
+	color: blue;
+	cursor: pointer;
 }
