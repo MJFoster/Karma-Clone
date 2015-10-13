@@ -21,7 +21,7 @@ div {
 	background-color: #fff;
 }
 
-.top-navigation > .content{
+.top-navigation .content{
 	width: 60%;
 	height: 4.37rem;
 	margin: 0 auto;
@@ -38,7 +38,7 @@ div {
 	margin-top: 1.7rem;
 }
 
-.links  li {
+.links li {
 	display: inline-block;
 	margin-left: 1.563rem;
 	font-family: 'Roboto', sans-serif;
@@ -51,7 +51,19 @@ div {
 	font-weight: 500;
 }
 
-li > a:hover {
+ li a:hover {
 	color: blue;
 	cursor: pointer;
+} 
+
+/************************************
+ Jumbotron Section
+************************************/
+.introduction {
+	background-image: url("../img/first-background.jpg");
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    color: white;
 }
