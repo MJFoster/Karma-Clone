@@ -7,11 +7,34 @@ html {
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
     background-color: LightGray;
 }
 
-div {
+/*div {
     border: 1px solid Chocolate;
+}*/
+
+/************************************
+ Buttons
+************************************/
+.big-button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+
+
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
 }
 
 /************************************
@@ -22,7 +45,7 @@ div {
 }
 
 .top-navigation .content{
-	width: 60%;
+	width: 970px;
 	height: 4.37rem;
 	margin: 0 auto;
 	padding: 0px 15px;
@@ -41,7 +64,7 @@ div {
 .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	font-size: 18px;
 	color: #838994;
 }
@@ -57,13 +80,40 @@ div {
 } 
 
 /************************************
- Jumbotron Section
+ Introduction Section
 ************************************/
 .introduction {
 	background-image: url("../img/first-background.jpg");
-	background-position: center bottom;
+	background-position: center;
+	/*position: fixed content;*/
+	position: 0 bottom;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
     color: white;
+    overflow: auto;
+}
+
+.introduction h1, .introduction h3 {
+	/*font-family: 'Roboto', sans-serif;*/
+	font-size: 1.563rem;
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 2.563rem;
+	font-weight: 400;
+}
+
+.introduction h3 {
+	margin-top: 1.25rem;
+}
+
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
 }
