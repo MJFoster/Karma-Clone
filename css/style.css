@@ -1,3 +1,15 @@
+/*************************************************
+Webpage sections in rendered order:
+- top-navigation:  A fixed navigation bar w/ links
+- introduction:  Main image w/ text and a button
+- cases: Graphics & text for each service
+- footer: Seperator line, social links, etc.
+*************************************************/
+
+/************************************
+General Elements & Classes
+************************************/
+
 html {
   box-sizing: border-box;
 }
@@ -11,10 +23,18 @@ body {
     background-color: LightGray;
 }
 
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    background-color: #fff;
+    text-align: center;
+}
 
-/************************************
- Buttons
-************************************/
+ol, ul {
+    list-style: none;
+}
+
 .big-button {
     width: 9.688rem;
     background-color: #f15a29;
@@ -27,12 +47,12 @@ body {
     font-size: 1.125rem;
 }
 
-
 .big-button:hover {
     background-color: #d9400e;
     border-color: #cf3d0e;
     cursor: pointer;
 }
+
 
 /************************************
  Navigation bar
@@ -42,18 +62,21 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 9999;
+	border-bottom: 1px solid #DDD;
 }
 
-.top-navigation .content{
-	width: 970px;
+.top-navigation .content {
+	width: 60%;
 	height: 4.37rem;
 	margin: 0 auto;
-	padding: 0px 15px;
+	padding: 0;
 }
 
 .logo {
 	 width: 26px;
 	 height: 70px;
+	 padding: 0;
+	 float: left;
 }
 
 .links {
@@ -84,16 +107,15 @@ body {
 .introduction {
 	background-image: url("../img/first-background.jpg");
 	background-position: center;
-	position: 0 bottom;
+	/*position: 0 bottom;*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
     color: white;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .introduction h1, .introduction h3 {
-	/*font-family: 'Roboto', sans-serif;*/
 	font-size: 1.563rem;
 	color: white;
 	text-align: center;
@@ -119,22 +141,71 @@ body {
 /************************************
  Cases Section
 ************************************/
+
+.cases {  /* Use Padding to keep background-color! */
+	padding: 7.875rem 0 5rem 0;
+	overflow: auto;
+}
+
 .cases h2 {
 	font-size: 2.75rem;
 	margin: 1.625rem 0 3.125rem;
 	font-weight: 300;
 }
 
-.cases .content {
-	text-align: center;
-}
-
-.cases ul {
-	list-style: none;
+.cases h3 {
+	font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
 }
 
 .cases .devices {
     width: 33.3333333%;
     display: inline-block;
     float: left;
+}
+
+/************************************
+ Footer Section
+************************************/
+.social {
+	overflow: auto;
+}
+
+.social hr {
+    margin: 1.313rem auto;
+    width: 810px;
+	padding: 0px 15px;
+	border: 0;
+    border-top: 1px solid #eaebec;
+}
+
+.social h5 {
+	font-weight: 400;
+	font-size: 1rem;
+	/*text-align: center;*/
+}
+
+.social .icons > li {
+
+}
+
+.social .icons > li:hover {
+	cursor: pointer;
+}
+
+.social .twitter {
+
+}
+
+.social .facebook {
+
+}
+
+.social .instagram {
+
+
+}
+.social .copy {
+
 }

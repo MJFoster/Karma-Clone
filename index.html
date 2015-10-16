@@ -1,3 +1,12 @@
+
+<!-- ***************************************************
+Webpage sections in rendered order:
+- top-navigation:  A fixed navigation bar w/ links
+- introduction:  Main image w/ text and a button
+- cases: Graphics & text for each service
+- footer: Seperator line, social links, etc.
+**************************************************** -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,9 +29,10 @@
 				<li><a href="#">Help</a></li>
 				<li><a href="#">Login</a></li>
 			</ul>
-			<img class="logo" src="img/karma-logo.svg" alt="Karma" width="26" height="70">
+			<img class="logo" src="img/karma-logo.svg" alt="Karma">
 		</div>
 	</nav>
+
 	<section class="introduction">
 		<div>
 			<h1>Introducing Karma</h1>
@@ -33,9 +43,7 @@
 		</div>
 	</section>
 
-
-	<section class="cases">
-		<div class="content">
+	<section class="cases content">
 			<h2>Everyone needs a little Karma.</h2>
 			<ul>
 				<li class="devices">
@@ -57,7 +65,26 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+	</section>
+
+	<footer class="social content">
+		<hr>
+		<h5>Join us on</h5>
+		<ul class="icons">
+			<li class="twitter">
+                <i class="fa fa-twitter"></i>
+            </li>
+            <li class="facebook">
+                <i class="fa fa-facebook"></i>
+            </li>
+            <li class="instagram">
+                <i class="fa fa-instagram"></i>
+            </li>
+		</ul>
+		<span class="copy">
+			&copy; Karma Mobility, Inc.
+		</span>
+	</footer>
 
 </body>
 
